@@ -59,9 +59,8 @@ class MultitracksSpider(scrapy.Spider):
         # Write three CSV file with the data scraped
         models = [genre, artist, multitrack]
         models_name = ['genre', 'artist', 'multitrack']
-            
-        for model in models:
-            dfs = [ pd.DataFrame(data=model) for model in models ]
+           
+        dfs = [ pd.DataFrame(data=model) for model in models ]
 
         # if an Excel file is needed
         # with pd.ExcelWriter(f'models.xlsx') as writer:
