@@ -21,4 +21,4 @@ mkdir models_files
 scrapy crawl multitracks
 ```
 
-After that, you should have three CSV file in *models_files/*
+After that, you should have three CSV files in *models_files/*
